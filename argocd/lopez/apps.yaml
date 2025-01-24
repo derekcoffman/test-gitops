@@ -7,10 +7,13 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: msp
-  source:
-    repoURL: https://github.com/derekcoffman/test-gitops.git
-    targetRevision: HEAD
-    path: kustomize/apps/nginx/overlays/dev
+  sources:
+    - repoURL: https://github.com/derekcoffman/test-gitops.git
+      targetRevision: HEAD
+      path: kustomize/apps/nginx/overlays/dev
+    - repoURL: https://github.com/derekcoffman/test-gitops.git
+      targetRevision: HEAD
+      path: kustomize/apps/mqtt/overlays/lopez
   destination:
     server: https://kubernetes.default.svc
     namespace: msp
