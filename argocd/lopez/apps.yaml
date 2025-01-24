@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/derekcoffman/test-gitops.git
     targetRevision: HEAD
-    path: argocd/lopez
+    path: kustomize/nginx/overlay/dev
   destination:
     server: https://kubernetes.default.svc
     namespace: msp
