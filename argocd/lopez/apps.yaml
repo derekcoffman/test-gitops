@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/derekcoffman/test-gitops.git
     targetRevision: HEAD
-    path: kustomize/nginx/overlay/dev
+    path: kustomize/apps/nginx/overlay/dev
   destination:
     server: https://kubernetes.default.svc
     namespace: msp
