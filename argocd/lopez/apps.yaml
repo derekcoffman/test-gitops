@@ -26,5 +26,5 @@ spec:
     namespace: msp
   syncPolicy:
     automated:
-      selfHeal: true
+      selfHeal: false
       prune: true
