@@ -9,7 +9,7 @@ metadata:
 data:
   mosquitto.conf: |
     sys_interval 1
-    autosave_interval 1
+    autosave_interval 2
     allow_anonymous true
     autosave_on_changes true
     # logs
