@@ -4,16 +4,16 @@ metadata:
   name: mosquitto
   namespace: msp
   labels:
-    app: mosquitto
+    app: mqtt
   # namespace: envds-base
 spec:
   selector:
     matchLabels:
-      app: mosquitto
+      app: mqtt
   template:
     metadata:
       labels:
-        app: mosquitto
+        app: mqtt
     spec:
       containers:
       - name: mosquitto

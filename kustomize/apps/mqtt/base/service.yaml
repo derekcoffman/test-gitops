@@ -4,11 +4,11 @@ metadata:
   name: mosquitto
   namespace: msp
   labels:
-    app: mosquitto
+    app: mqtt
   # namespace: envds-base
 spec:
   selector:
-    app: mosquitto
+    app: mqtt
   ports:
   - name: http
     protocol: TCP

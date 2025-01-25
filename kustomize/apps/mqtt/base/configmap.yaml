@@ -4,7 +4,7 @@ metadata:
   name: mosquitto-config
   namespace: msp
   labels:
-    app: mosquitto
+    app: mqtt
   # namespace: envds-base
 data:
   mosquitto.conf: |

@@ -5,8 +5,8 @@ metadata:
 
 # Example configuration for the webserver
 # at https://github.com/monopole/hello
-commonLabels:
-  app: mqtt
+# labels:
+#   - app: mqtt
 
 resources:
 - configmap.yaml
