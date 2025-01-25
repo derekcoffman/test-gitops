@@ -3,10 +3,14 @@ kind: Application
 metadata:
   name: msp-lopez
   namespace: argocd
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
+  # finalizers:
+  #   - resources-finalizer.argocd.argoproj.io
 spec:
   project: msp
+  source:
+    path: 'argocd/lopez'
+    repoURL: 'https://github.com/derekcoffman/test-gitops.git'
+    targetRevision: HEAD
   sources:
     # - repoURL: https://github.com/derekcoffman/test-gitops.git
     #   targetRevision: HEAD
