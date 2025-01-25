@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mosquitto
+  name: mqtt
   namespace: msp
   labels:
     app: mqtt
@@ -17,7 +17,7 @@ spec:
         app: mqtt
     spec:
       containers:
-      - name: mosquitto
+      - name: mqtt
         # image: localhost:5000/envds/eclipse-mosquitto:2.0.14
         # image: envds-registry:36301/eclipse-mosquitto:2.0.14
         # image: envds-registry:5000/core/eclipse-mosquitto:2.0.14
@@ -55,9 +55,9 @@ spec:
         - name: mosquitto-config
           configMap:
             name: mosquitto-config
-        - name: mosquitto-pv-storage
+        - name: mqtt-pv-storage
           persistentVolumeClaim:
-            claimName: mosquitto-pv-claim
+            claimName: mqtt-pv-claim
         # - name: mosquitto-certs
         #   configMap:
         #     name: mosquitto-certs

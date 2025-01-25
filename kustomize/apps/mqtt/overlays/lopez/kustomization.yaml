@@ -11,11 +11,12 @@ metadata:
 
 resources:
 - ../../base
+- pv.yaml
 
-patches:
-  - path: pv.yaml
-    target:
-      kind: PersistentVolume
-  - path: pvc.yaml
-    target:
-      kind: PersistentVolumeClaim
+# patches:
+#   - path: pv.yaml
+#     target:
+#       kind: PersistentVolume
+#   # - path: pvc.yaml
+#   #   target:
+#   #     kind: PersistentVolumeClaim
