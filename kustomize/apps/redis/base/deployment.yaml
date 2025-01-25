@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: redis
-        image: redis-stack-server:6.2.6-v18
+        image: redis/redis-stack-server:latest
         # command:
         #   - redis-server
         #   - "/etc/redis-stack.conf"
