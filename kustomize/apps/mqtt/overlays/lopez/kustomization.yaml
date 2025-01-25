@@ -12,6 +12,7 @@ metadata:
 resources:
 - ../../base
 - pv.yaml
+- mqtt-sealedsecret.yaml
 
 # patches:
 #   - path: pv.yaml
