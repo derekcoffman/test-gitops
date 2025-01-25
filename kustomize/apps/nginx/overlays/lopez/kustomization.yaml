@@ -12,6 +12,7 @@ metadata:
 
 resources:
 - ../../base
+- nginx-sealed-secret.yaml
 
 # patchesStrategicMerge:
 #   - deployment.yaml
