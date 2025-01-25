@@ -14,9 +14,9 @@ spec:
     - repoURL: https://github.com/derekcoffman/test-gitops.git
       targetRevision: HEAD
       path: kustomize/apps/mqtt/overlays/lopez
-    - repoURL: https://github.com/derekcoffman/test-gitops.git
-      targetRevision: HEAD
-      path: kustomize/apps/redis/overlays/lopez
+    # - repoURL: https://github.com/derekcoffman/test-gitops.git
+    #   targetRevision: HEAD
+    #   path: kustomize/apps/redis/overlays/lopez
   destination:
     server: https://kubernetes.default.svc
     namespace: msp
