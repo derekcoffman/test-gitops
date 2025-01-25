@@ -5,13 +5,13 @@ metadata:
 
 # Example configuration for the webserver
 # at https://github.com/monopole/hello
-namePrefix: dev-
-commonLabels:
-  app: nginx
-  variant: dev
+# namePrefix: dev-
+# commonLabels:
+#   app: nginx
+#   variant: lopez
 
 resources:
 - ../../base
 
-patchesStrategicMerge:
-  - deployment.yaml
+# patchesStrategicMerge:
+#   - deployment.yaml
