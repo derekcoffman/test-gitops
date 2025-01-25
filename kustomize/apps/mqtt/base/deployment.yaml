@@ -40,8 +40,8 @@ spec:
             - name: mosquitto-config
               mountPath: /mosquitto/config/mosquitto.conf
               subPath: mosquitto.conf
-            - name: mosquitto-pv-storage
-              mountPath: /mosquitto/data
+            - name: mqtt-pv-storage
+              mountPath: /mqtt/data
             # - name: mosquitto-certs
             #   mountPath: /certs/ca.crt
             #   subPath: ca.crt
