@@ -9,6 +9,7 @@ metadata:
 #   - app: mqtt
 
 resources:
+- namespace.yaml
 - configmap.yaml
 - pvc.yaml
 - deployment.yaml
