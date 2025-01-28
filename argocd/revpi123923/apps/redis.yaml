@@ -10,7 +10,7 @@ spec:
   source:
       repoURL: https://github.com/derekcoffman/test-gitops.git
       targetRevision: HEAD
-      path: kustomize/apps/redis/overlays/lopez
+      path: kustomize/apps/redis/overlays/revpi123923
   # sources:
     # - repoURL: https://github.com/derekcoffman/test-gitops.git
     #   targetRevision: HEAD

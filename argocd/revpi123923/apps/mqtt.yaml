@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/derekcoffman/test-gitops.git
     targetRevision: HEAD
-    path: kustomize/apps/mqtt/overlays/lopez
+    path: kustomize/apps/mqtt/overlays/revpi123923
   #   path: 'argocd/lopez/mqtt.yaml'
   #   repoURL: 'https://github.com/derekcoffman/test-gitops.git'
   #   targetRevision: HEAD
