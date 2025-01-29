@@ -49,3 +49,7 @@ spec:
           - name: envds-relay-config
             mountPath: /app/config/relay.conf
             subPath: relay.conf
+      volumes:
+        - name: envds-relay-config
+          configMap:
+            name: envds-relay-config
