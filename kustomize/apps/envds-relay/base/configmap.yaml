@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: envds-relay-config
+  namespace: msp
+  labels:
+    app: envds-relay-config
+data:
+  relay.conf: |
+    daq_id: default
+    targets:
+      uasbase1:
+        uri: 10.55.169.91
+        mqtt-port: 1883
+        topic-base: /uasdaq/noaa-pmel/acg/cloudysky/
+        # mqtt-auth-secret: mqtt-auth-uasbase1
+      # aws:
+      #   uri: <endpoint>
+      #   mqtt-port: 8883
+      #   mqtt-auth-secret: mqtt-auth-aws
