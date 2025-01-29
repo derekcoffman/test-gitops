@@ -4,7 +4,7 @@ metadata:
   name: envds-relay-config
   namespace: msp
   labels:
-    app: envds-relay-config
+    app: envds-relay
 data:
   relay.conf: |
     daq_id: default
