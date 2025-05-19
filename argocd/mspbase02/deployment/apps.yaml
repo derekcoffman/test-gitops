@@ -23,7 +23,7 @@ spec:
     #   path: argocd/lopez/apps
   destination:
     server: https://kubernetes.default.svc
-    namespace: msp
+    namespace: argocd
   syncPolicy:
     automated:
       selfHeal: false
