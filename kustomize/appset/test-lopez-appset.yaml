@@ -11,13 +11,13 @@ spec:
     repoURL: https://github.com/derekcoffman/test-gitops.git
     revision: HEAD
     directories:
-    - path: kustomize/apps/*/overlays/dev
+    - path: kustomize/apps/*/overlays/lopez
   template:    
     metadata:
-      name: '{{index .path.segments 1}}-{{index .path.segments 3}}'   
+      name: '{{index .path.segments 2}}-{{index .path.segments 4}}'   
     spec:
       # The project the application belongs to.
-      project: default
+      project: msp
 
       # Source of the application manifests
       source:
@@ -28,4 +28,4 @@ spec:
       # Destination cluster and namespace to deploy the application
       destination:
         server: https://kubernetes.default.svc
-        namespace: '{{index .path.segments 1}}-{{index .path.segments 3}}'
+        namespace: '{{index .path.segments 2}}-{{index .path.segments 4}}'
