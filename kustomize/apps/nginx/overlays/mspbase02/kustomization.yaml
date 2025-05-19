@@ -12,17 +12,7 @@ metadata:
 
 resources:
 - ../../base
-- nginx-sealedsecret.yaml
+# - nginx-sealedsecret.yaml
 
-patches:
-  - path: increase_replicas.yaml
-
-patches:
-  # Strategic merge patch
-  - path: increase_replicas.yaml
-    target:
-      group: apps
-      version: v1
-      kind: Deployment
-      name: nginx
-
+# patchesStrategicMerge:
+#   - deployment.yaml
