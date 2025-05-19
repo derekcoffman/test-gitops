@@ -26,7 +26,7 @@ spec:
     #   path: kustomize/apps/redis/overlays/lopez
   destination:
     server: https://kubernetes.default.svc
-    namespace: msp
+    namespace: msp-system
   syncPolicy:
     automated:
       selfHeal: true
