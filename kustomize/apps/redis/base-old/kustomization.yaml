@@ -5,12 +5,10 @@ metadata:
 
 # Example configuration for the webserver
 # at https://github.com/monopole/hello
-# commonLabels:
-#   app: nginx
+# labels:
+#   - app: mqtt
 
 resources:
-- redis-ns.yaml
-- redis-configmap.yaml
-- redis-storage.yaml
-- redis-deployment.yaml
-- redis-service.yaml
+- pvc.yaml
+- deployment.yaml
+- service.yaml

@@ -5,12 +5,12 @@ metadata:
 
 # Example configuration for the webserver
 # at https://github.com/monopole/hello
-# labels:
-#   - app: mqtt
+# commonLabels:
+#   app: nginx
 
 resources:
-- namespace.yaml
-- configmap.yaml
-- pvc.yaml
-- deployment.yaml
-- service.yaml
+- mqtt-ns.yaml
+- mqtt-configmap.yaml
+- mqtt-storage.yaml
+- mqtt-deployment.yaml
+- mqtt-service.yaml
